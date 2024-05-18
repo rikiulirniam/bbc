@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/890aefc49b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bismillah Berkah</title>
+    <link rel="stylesheet" href="asset\css\style.css" />
+    <link rel="stylesheet" href="asset/css/product.css" />
+    <link rel="shortcut icon" href="asset\img\logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container navbar">
+        <header>
+          <a href="profile.html"
+            ><img class="logo" src="asset\img\logo.png" alt="Logo"
+          /></a>
+          <a href="profile.html">
+            <h1 class="font-bold" style="color: white;">Bismillah Berkah</h1></a
+          >
+        </header>
+
+        <menu>
+          <ul class="font-bold" id="menuul">
+            <li id="menulis"><a href="index.html">Home</a></li>
+            <li id="menulis">
+              <a href="jasa.html">Jasa</a>
+            </li>
+            <li id="menulis" class="active-nav">
+              <a href="produk.html">Produk</a>
+            </li>
+            <li id="menulis"><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <button onclick="menu()" type="button" id="btn-menu">
+            <span>
+              <img src="asset\img\bars-solid.svg" alt="bar" />
+            </span>
+          </button>
+        </menu>
+      </div>
+    </nav>
+    <div class="container products">
+      <div class="product">
+        <div class="slider">
+          <!-- <img src="asset/img/overview.jpg" alt="lok" /> -->
+          <div class="content banner">
+            <div class="blend"></div>
+            <img class="img-overview" src="asset\img\overview.jpg" alt="a" />
+          </div>
+        </div>
+
+        <div class="barang">
+          <button id="tulis" onclick="altul()">
+            <img src="asset\img\pencil-solid.svg" alt="svg" />
+            <h3>Alat Tulis</h3>
+          </button>
+        </div>
+        <div class="barang">
+          <button id="gambar" onclick="algam()">
+            <img src="asset\img\palette-solid.svg" alt="svg" />
+            <h3>Alat Gambar</h3>
+          </button>
+        </div>
+        <div class="barang">
+          <button id="bukuh" onclick="bukuu()">
+            <img src="asset\img\book-solid.svg" alt="svg" />
+            <h3>Buku</h3>
+          </button>
+        </div>
+        <div class="line-p"></div>
+        <div class="line-p"></div>
+        <div class="line-p"></div>
+        <div class="barang">
+          <button id="tass" onclick="kertass()">
+            <img src="asset\img\map-solid.svg" alt="" />
+            <h3>Kertas</h3>
+          </button>
+        </div>
+        <div class="barang">
+          <button id="lengkapan" onclick="perlen()">
+            <img src="asset\img\ruler-solid.svg" alt="" />
+            <h3>Perlengkapan</h3>
+          </button>
+        </div>
+        <div class="barang">
+          <button id="lain" onclick="lainnyaa()">
+            <img src="asset\img\ellipsis-solid.svg" alt="" />
+            <h3>Lainnya</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main">
+      <div class="title">
+        <h1>Etalase</h1>
+      </div>
+      <div class="tulis" id="altu">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Pensil-hb.jpg" alt="a" />
+          <h2>Pensil HB</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\pensil2b.jpg" alt="a" />
+          <h2>Pensil 2B</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\boardmarker.jpg" alt="a" />
+          <h2>Spidol Marker</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\permanent.jpg" alt="a" />
+          <h2>Spidol Permanent</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\spidolbiru.jpg" alt="a" />
+          <h2>Spidol Biru</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\spidolmerah.jpg" alt="a" />
+          <h2>Spidol Merah</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\pensil big.jpg" alt="a" />
+          <h2>Pensil BIG</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\bolpoin.jpg" alt="a" />
+          <h2>Bolpoin</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\gelpen.jpg" alt="a" />
+          <h2>Pena Gel</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\joyco.jpg" alt="a" />
+          <h2>Pena Joyco</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Penawarna.jpg" alt="a" />
+          <h2>Pena Warna</h2>
+        </div>
+      </div>
+      <div class="gambar" id="alga">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Crayon.jpg" alt="a" />
+          <h2>Crayon</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\pensilwarna.jpg" alt="a" />
+          <h2>Pensil Warna</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\spidolgambar.jpg" alt="a" />
+          <h2>Spidol Gambar</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Pensil-hb.jpg" alt="a" />
+          <h2>Pensil HB</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\pensil2b.jpg" alt="a" />
+          <h2>Pensil 2B</h2>
+        </div>
+      </div>
+      <div class="buku" id="buku">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Buku-batik.jpg" alt="a" />
+          <h2>Buku Batik</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\bukutulis.jpg" alt="a" />
+          <h2>Buku Tulis</h2>
+        </div>
+      </div>
+      <div class="kertas" id="kertas">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\karton.jpg" alt="a" />
+          <h2>Karton</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\kertas kado1.jpg" alt="a" />
+          <h2>Kertas Kado</h2>
+        </div>
+        <div class="etalase">
+          <img
+            class="produk"
+            src="asset\img\produk\kertas manila putih.jpg"
+            alt="a"
+          />
+          <h2>Kertas Manila</h2>
+        </div>
+        <div class="etalase">
+          <img
+            class="produk"
+            src="asset\img\produk\kertas origami.jpg"
+            alt="a"
+          />
+          <h2>Kertas Origami</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\kertassampul.jpg" alt="a" />
+          <h2>Kertas Sampul</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\label.jpg" alt="a" />
+          <h2>Label</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\binder.jpg" alt="a" />
+          <h2>Kertas Binder</h2>
+        </div>
+      </div>
+      <div class="perlengkapan" id="perle">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\Busur.jpg" alt="a" />
+          <h2>Busur</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\penggaris.jpg" alt="a" />
+          <h2>Penggaris</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\penghapus.jpg" alt="a" />
+          <h2>Penghapus</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\rautan.jpg" alt="a" />
+          <h2>Rautan</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\klip.jpg" alt="a" />
+          <h2>Klip</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\paperclip.jpg" alt="a" />
+          <h2>Paper Clip</h2>
+        </div>
+        <div class="etalase">
+          <img
+            class="produk"
+            src="asset\img\produk\penghapus-papan.jpg"
+            alt="a"
+          />
+          <h2>Board Eraser</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\map mika.jpg" alt="a" />
+          <h2>Map Mika</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\sampul mika.jpg" alt="a" />
+          <h2>Sampul Mika</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\isi pensil.jpg" alt="a" />
+          <h2>Isi Pensil</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\jangka.jpg" alt="a" />
+          <h2>Jangka</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\tinta.jpg" alt="a" />
+          <h2>Tinta</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\stabilo.jpg" alt="a" />
+          <h2>Stabilo</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\tipexkertas.jpg" alt="a" />
+          <h2>Tipe-X Kertas</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\cutter.jpg" alt="a" />
+          <h2>Cutter</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\gunting.jpg" alt="a" />
+          <h2>Gunting</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\lem fok.jpg" alt="a" />
+          <h2>Lem Fox</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\lem kertas.jpg" alt="a" />
+          <h2>Lem Kertas</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\lemtembak.jpg" alt="a" />
+          <h2>Lem Tembak</h2>
+        </div>
+      </div>
+      <div class="lainnya" id="lainnya">
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\baterai ABC.jpg" alt="a" />
+          <h2>Baterai ABC</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\amplop.jpg" alt="a" />
+          <h2>Amplop</h2>
+        </div>
+        <div class="etalase">
+          <img
+            class="produk"
+            src="asset\img\produk\pemotong kuku.jpg"
+            alt="a"
+          />
+          <h2>Gunting Kuku</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\staples.jpg" alt="a" />
+          <h2>Staples</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\tisu.jpg" alt="a" />
+          <h2>Tisu</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\solasi.jpg" alt="a" />
+          <h2>Solatip</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\lakban.jpg" alt="a" />
+          <h2>Lakban</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\boxstempel.jpg" alt="a" />
+          <h2>Box Stampel</h2>
+        </div>
+        <div class="etalase">
+          <img class="produk" src="asset\img\produk\doubletip.jpg" alt="a" />
+          <h2>Double Tip</h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed by Riki</p>
+      <p><a href="https://smkthpati.sch.id">SMK TUNAS HARAPAN PATI</a></p>
+    </footer>
+    <script src="asset/js/dropdown.js"></script>
+    <script src="asset\js\product.js"></script>
+  </body>
+</html>

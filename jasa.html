@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset\font\css\font-awesome.css" />
+    <title>Bismillah Berkah</title>
+    <link rel="stylesheet" href="asset\css\style.css" />
+    <link rel="stylesheet" href="asset\css\service.css" />
+    <link rel="shortcut icon" href="asset\img\logo.png" type="image/x-icon" />
+  </head>
+
+  <body style="background-color: rgb(49, 51, 55)">
+    <nav>
+      <div class="container navbar">
+        <header>
+          <a href="profile.html"
+            ><img class="logo" src="asset\img\logo.png" alt="Logo"
+          /></a>
+          <a href="profile.html">
+            <h1 class="font-bold">Bismillah Berkah</h1></a
+          >
+        </header>
+
+        <menu>
+          <ul class="font-bold" id="menuul">
+            <li id="menulis"><a href="index.html">Home</a></li>
+            <li id="menulis" class="active-nav">
+              <a href="jasa.html">Jasa</a>
+            </li>
+            <li id="menulis"><a href="produk.html">Produk</a></li>
+            <li id="menulis"><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <button onclick="menu()" type="button" id="btn-menu">
+            <span>
+              <img src="asset\img\bars-solid.svg" alt="bar" />
+            </span>
+          </button>
+        </menu>
+      </div>
+    </nav>
+
+    <div class="container col-jasa">
+      <!-- <h1>Jasa yang kami tawarkan</h1> -->
+      <div class="jasa">
+        <div class="ijasa">
+          <img src="asset\img\jasa-print.png" alt="" />
+        </div>
+        <div class="tjasa">
+          <h1>Print</h1>
+          <p>Menerima Jasa Print dokumen dalam bentuk teks maupun gambar.</p>
+        </div>
+        <div class="tjasa">
+          <h1>Fotocopy</h1>
+          <p>Menerima Jasa Fotocopy hitam putih maupun berwarna</p>
+        </div>
+        <div class="ijasa">
+          <img src="asset\img\jasa-fotocopy.png" alt="" />
+        </div>
+        <div class="ijasa">
+          <img src="asset\img\jasa-cetak.png" alt="" />
+        </div>
+        <div class="tjasa">
+          <h1>Cetak Foto</h1>
+          <p>Menerima Jasa cetak foto dengan ukuran yang beragam</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed by Riki</p>
+      <p><a href="https://smkthpati.sch.id">SMK TUNAS HARAPAN PATI</a></p>
+    </footer>
+
+    <script src="asset/js/dropdown.js"></script>
+  </body>
+</html>

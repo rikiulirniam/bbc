@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <title>Bismillah Berkah</title>
+    <link rel="stylesheet" href="asset\css\style.css" />
+    <link rel="shortcut icon" href="asset\img\logo.png" type="image/x-icon" />
+  </head>
+  <style>
+    .title {
+      padding: 2%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+
+    .title h1 {
+      font-size: 3em;
+      color: white;
+    }
+    .timeline {
+      margin: 0 auto;
+      max-width: 750px;
+      padding: 25px;
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+      font-family: "Poppins", sans-serif;
+      color: #ffffff;
+    }
+
+    .timeline__component {
+      margin: 0 20px 20px 20px;
+    }
+
+    .timeline__component--bg {
+      padding: 1.5em;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    .timeline__component--bottom {
+      margin-bottom: 0;
+    }
+
+    .timeline__middle {
+      position: relative;
+      background: #ffffff;
+    }
+
+    .timeline__point {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15px;
+      height: 15px;
+      background: #ffffff;
+      border-radius: 50%;
+    }
+
+    .timeline__point--bottom {
+      top: initial;
+      bottom: 0;
+    }
+
+    .timeline__date {
+      text-align: right;
+    }
+
+    .timeline__date--right {
+      text-align: right;
+    }
+
+    .timeline__title {
+      margin: 0;
+      font-size: 1.15em;
+      font-weight: bold;
+    }
+
+    .timeline__paragraph {
+      line-height: 1.5;
+    }
+    footer {
+      margin-top: 10vh;
+    }
+
+    @media screen and (max-width: 821px) {
+      .title {
+        display: block;
+      }
+
+      .title h1 {
+        font-size: 2em;
+      }
+      .timeline {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .timeline__point {
+        display: none;
+      }
+      .timeline__date {
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 481px) {
+      .title {
+        display: block;
+      }
+
+      .title h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="container navbar">
+        <header>
+          <a href="profile.html"
+            ><img class="logo" src="asset\img\logo.png" alt="Logo"
+          /></a>
+          <a href="profile.html">
+            <h1 class="font-bold">Bismillah Berkah</h1></a
+          >
+        </header>
+
+        <menu>
+          <ul class="font-bold" id="menuul">
+            <li id="menulis"><a href="index.html">Home</a></li>
+            <li id="menulis">
+              <a href="jasa.html">Jasa</a>
+            </li>
+            <li id="menulis"><a href="produk.html">Produk</a></li>
+            <li id="menulis"><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <button onclick="menu()" type="button" id="btn-menu">
+            <span>
+              <img src="asset\img\bars-solid.svg" alt="bar" />
+            </span>
+          </button>
+        </menu>
+      </div>
+    </nav>
+
+    <div class="title">
+      <h1>Bismillah Berkah Fotocopy</h1>
+    </div>
+    <div class="timeline">
+      <div class="timeline__component">
+        <div class="timeline__date--right">Apa Itu?</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <p class="timeline__paragraph">
+          Tempat yang melayani jasa Fotocopy, print, dan cetak foto. Selain itu,
+          Berkah Fotocopy menjual perlengkapan sekolah seperti buku, alat tulis,
+          alat kerajinan, dan banyak lagi.
+        </p>
+      </div>
+
+      <div class="timeline__component">
+        <div class="timeline__date">Siapa Pemilik Tempat ini?</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">Muhammad Sholeh</h2>
+        <p class="timeline__paragraph">
+          Seorang lulusan SMK Tunas Harapan Pati yang kini menjadi pemilik
+          sekaligus pengelola kebun sawit.
+        </p>
+      </div>
+      <div class="timeline__component">
+        <div class="timeline__date--right">Sejarah</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <p class="timeline__paragraph">
+          Tempat ini dulunya hanyalah sebuah rumah dari Muhammad sholeh, suatu
+          saat karena ingin memiliki pekerjaan sambilan ia membuka tempat
+          fotocopy ini.
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bottom"></div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bottom"></div>
+    </div>
+    <footer>
+      <p>Designed by Riki</p>
+      <p><a href="https://smkthpati.sch.id">SMK TUNAS HARAPAN PATI</a></p>
+    </footer>
+
+    <script src="asset\js\profile.js"></script>
+    <script src="asset/js/dropdown.js"></script>
+  </body>
+</html>

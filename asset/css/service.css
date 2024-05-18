@@ -1,0 +1,72 @@
+.col-jasa {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.jasa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35em 35em 35em;
+  width: 80%;
+  place-items: center;
+}
+.ijasa {
+  width: auto;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.ijasa img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tjasa {
+  width: 65%;
+  height: 55%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tjasa h1 {
+  font-size: 3em;
+  color: rgb(58, 97, 236);
+}
+.tjasa p {
+  font-size: 1.3em;
+  color: white;
+}
+@media screen and (max-width: 821px) {
+  .jasa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em;
+    width: 80%;
+    place-items: center;
+  }
+  .ijasa{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .jasa{
+    grid-template-rows: 15em 15em 15em;
+
+  }
+  .tjasa h1 {
+    font-size: 2.4em;
+    color: rgb(58, 97, 236);
+  }
+  .tjasa p {
+    font-size: 1em;
+    color: white;
+  }
+  .tjasa{
+    overflow: visible;
+  }
+}

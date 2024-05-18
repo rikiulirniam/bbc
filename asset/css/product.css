@@ -1,0 +1,247 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+}
+.product {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 10em 3px 10em;
+  place-items: center;
+  background-color: #ffae34;
+  margin: 2% 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 20px 20px;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  grid-row: span 3;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-position: bottom left; */
+}
+
+.line-p {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.barang button::after {
+  content: "";
+  position: relative;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -11px;
+  transition: 0.3s;
+}
+
+.barang button:hover {
+  width: 50%;
+}
+
+.barang button:hover::after {
+  width: 100%;
+}
+
+.buttonactive {
+  background-color: rgba(0, 0, 0, 0);
+}
+.barang {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.barang button {
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  /* background-color: rgba(0,0,0,0.05); */
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  place-items: center;
+  /* border: black 2px solid; */
+}
+
+.barang button img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+}
+.barang img {
+  width: 70%;
+  height: 70%;
+}
+
+.main .title h1 {
+  /* padding-left: 10%; */
+  color: white;
+}
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tulis {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em 25em 25em;
+  place-items: center;
+}
+.gambar {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em 25em;
+  place-items: center;
+  display: none;
+}
+.buku {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em;
+  place-items: center;
+  display: none;
+}
+.kertas {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em 25em;
+  place-items: center;
+  display: none;
+}
+
+.perlengkapan {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em 25em 25em 25em 25em;
+  place-items: center;
+  display: none;
+}
+
+.lainnya {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25em 25em 25em;
+  place-items: center;
+  display: none;
+}
+.etalase {
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  object-position: top;
+  background-color: rgb(49, 51, 55);
+  border-radius: 8px;
+  border: rgb(49, 51, 55) 15px solid;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.etalase .produk {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+  margin: 0;
+  /* object-position: top; */
+}
+.etalase h3 {
+  padding: 3% 10%;
+  margin: 0;
+}
+@media screen and (max-width: 821px) {
+  .product .slider {
+    display: none;
+  }
+  .product {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tulis {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em;
+  }
+  .gambar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em;
+  }
+  .buku {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em;
+  }
+  .kertas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em 20em;
+  }
+
+  .perlengkapan {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em;
+  }
+
+  .lainnya {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10em 10em 10em;
+  }
+  .line-p {
+    display: none;
+  }
+  .tulis {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em;
+  }
+  .gambar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em;
+  }
+  .buku {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em;
+  }
+  .kertas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em;
+  }
+
+  .perlengkapan {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em;
+  }
+
+  .lainnya {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em 20em;
+  }
+}
