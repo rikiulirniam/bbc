@@ -1,2 +1,2 @@
 # Pages
-rikiulirniam.github.io/bbc
+https://rikiulirniam.github.io/bbc
